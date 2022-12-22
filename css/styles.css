@@ -735,14 +735,3 @@ img {
 .footer-socials .social-link:focus {
   background-color: var(--focus);
 }
-
-.chat {
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  bottom: 50px;
-  right: 50px;
-  background-color: red;
-  font-size: 64px;
-  color:rgba(33, 150, 243, 0.9);
-}
