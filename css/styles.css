@@ -688,6 +688,13 @@ img {
   color: var(--focus);
 }
 
+.form-field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .form-label {
   margin-bottom: 4px;
 
@@ -726,13 +733,6 @@ img {
   color: var(--placeholder);
 }
 
-.form-field {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
 .form-input:hover,
 .form-input:focus,
 .form-textarea:hover,
@@ -750,6 +750,7 @@ img {
   top: 50%;
   transform: translate(12px, -50%);
   transition: fill 250ms var(--cubic);
+  pointer-events: none;
 }
 
 .form-field:last-of-type {
@@ -761,15 +762,34 @@ img {
 }
 
 .policy-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: baseline;
-  gap: 8.33px;
+  margin-bottom: 30px;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  
+  border: 2px solid var(--primary-dark);
+  border-radius: 2px;
+
+  fill: transparent;
+}
+
+.policy-checkbox:checked + .checkbox-icon {
+  border: none;
+  background-color: var(--focus);
+  fill: var(--primary-light);
 }
 
 .policy-description {
-  display: inline-block;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8.38px;
 
   font-size: 14px;
   line-height: 1.71;
