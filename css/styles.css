@@ -219,7 +219,6 @@ img {
   width: 100%;
   height: 4px;
   bottom: -1px;
-  color: var(--focus);
 
   border-radius: 2px;
   background-color: var(--focus);
@@ -695,7 +694,14 @@ img {
   margin-bottom: 10px;
 }
 
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .form-label {
+  display: block;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -753,10 +759,6 @@ img {
   pointer-events: none;
 }
 
-.form-field:last-of-type {
-  margin-bottom: 20px;
-}
-
 .textarea {
   resize: none;
 }
@@ -781,7 +783,7 @@ img {
 }
 
 .policy-checkbox:checked + .checkbox-icon {
-  border: none;
+  border-color: var(--focus);
   background-color: var(--focus);
   fill: var(--primary-light);
 }
