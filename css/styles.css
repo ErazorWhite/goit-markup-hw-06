@@ -628,7 +628,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 40px;
+  padding: 10px;
 
   transform: scale(1);
   transition: transform 250ms var(--cubic);
@@ -638,7 +638,7 @@ img {
   position: relative;
   padding: 40px;
   height: 100%;
-  max-height: 585px;
+  max-height: 581px;
   width: 100%;
   max-width: 528px;
 
@@ -652,6 +652,8 @@ img {
 }
 
 .modal-title {
+  display: inline-block;
+  width: 100%;
   margin-bottom: 12px;
 
   font-size: 20px;
@@ -905,6 +907,8 @@ img {
 }
 
 .subscribe-title {
+  display: inline-block;
+  width: 100%;
   margin-bottom: 20px;
 
   font-size: 14px;
